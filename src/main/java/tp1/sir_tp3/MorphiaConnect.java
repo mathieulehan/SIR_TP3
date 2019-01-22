@@ -42,7 +42,7 @@ public class MorphiaConnect {
 
 	    Address address = new Address();
 	    address.setStreet("312 Coincoin street");
-	    address.setCity("Old dog city");
+	    address.setCity("Old doge city");
 	    address.setPostCode("645 864");
 	    address.setCountry("France");
 	    //set address
@@ -54,7 +54,7 @@ public class MorphiaConnect {
 
 	public static void findPersons(Datastore ds) {
 	    for (Person e : ds.find(Person.class))
-	         System.err.println(e);
+	         System.out.println(e.getName());
 	}
 
 }

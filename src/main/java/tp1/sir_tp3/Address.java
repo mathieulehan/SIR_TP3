@@ -1,7 +1,14 @@
 package tp1.sir_tp3;
 
+import org.bson.types.ObjectId;
+import org.mongodb.morphia.annotations.Entity;
+import org.mongodb.morphia.annotations.Id;
+
+@Entity("adresses")
 public class Address {
 
+	@Id
+	private ObjectId id;
 	private String street;
 	private String city;
 	private String postCode;
